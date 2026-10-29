@@ -76,7 +76,7 @@ const Projects = () => {
       tags: ["HTML", "Tailwind CSS", "React","UX Design"],
       category: "Portfolio",
       image: "/images/project_6.png",
-      liveLink: "https://my-portfolio-psi-blue-8ljqrjotlb.vercel.app/",
+      liveLink: "https://hadeel303portfolio.vercel.app/",
       githubLink: "https://github.com/hadeel303elmutasim/MyPortfolio.git"
     }
   ];
