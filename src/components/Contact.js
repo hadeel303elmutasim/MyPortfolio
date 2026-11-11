@@ -109,7 +109,7 @@ const Contact = () => {
                 <i className={`fa-solid fa-code text-sm mt-0.5 w-4 text-center ${isDarkMode ? "text-cyan-400" : "text-blue-600"}`}></i>
                 <div>
                   <span className="block text-[10px] text-gray-500 uppercase tracking-wider font-bold">Focus</span>
-                  <span className={`font-medium ${isDarkMode ? "text-slate-300" : "text-slate-700"}`}>Front-End Development / Software Development</span>
+                  <span className={`font-medium ${isDarkMode ? "text-slate-300" : "text-slate-700"}`}>Full Stack Development / Software Development</span>
                 </div>
               </div>
             </div>
