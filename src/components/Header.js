@@ -1,6 +1,7 @@
 import { React, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { useTheme } from '../ThemeContext'; // import context for theme dark/light mode toggle
+import { useTheme } from '../ThemeContext';
+import { openEmail } from '../utils/openEmail';
 
 const Header = () => {
   const location = useLocation();
@@ -32,6 +33,8 @@ const Header = () => {
       <div className="flex items-center gap-2">
         <span className={`w-2 h-2 rounded-full animate-pulse ${isDarkMode ? "bg-cyan-400" : "bg-blue-600"}`}></span>
         <Link to="#home" className={`text-lg font-bold tracking-wide ${isDarkMode ? "text-white" : "text-slate-900"}`}>
+          <img src={isDarkMode ? "/images/logoNO.png" : "/images/logoNO-light.png"}
+             alt="Logo" className="w-16 h-16 inline-block mr-2" />
           Portfolio
         </Link>
       </div>
@@ -57,13 +60,13 @@ const Header = () => {
         >
           {isDarkMode ? (
             <>
-              <i className="fa-solid fa-moon"></i>
-              <span>Dark Mode</span>
+               <i className="fa-solid fa-sun"></i>
+              <span>Light Mode</span>
             </>
           ) : (
             <>
-              <i className="fa-solid fa-sun"></i>
-              <span>Light Mode</span>
+            <i className="fa-solid fa-moon"></i>
+              <span>Dark Mode</span>
             </>
           )}
         </button>
@@ -83,7 +86,7 @@ const Header = () => {
           </a>
         </div>
         
-        <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full text-xs font-semibold shadow-[0_0_15px_rgba(37,99,235,0.4)] transition-all">
+        <a href="mailto:hadeelelmutasim303@gmail.com" onClick={openEmail} className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full text-xs font-semibold shadow-[0_0_15px_rgba(37,99,235,0.4)] transition-all">
           Let's Connect
         </a>
 

@@ -6,69 +6,14 @@ const Footer = () => {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
 
-  const handleSubscribe = (e) => {
-    e.preventDefault();
-    if (email.trim() !== '') {
-      setSubscribed(true);
-      setEmail('');
-    }
-  };
-
   return (
     <footer className={`pt-16 pb-8 px-6 font-sans relative overflow-hidden transition-colors duration-300 ${
       isDarkMode 
         ? "bg-[#030014] text-white border-t border-slate-900" 
         : "bg-slate-50 text-slate-900 border-t border-slate-200"
     }`}>
-      <div className="max-w-6xl mx-auto">
-        
-        {/* Top Segment: Stay Updated Newsletter Section */}
-        <div className={`flex flex-col md:flex-row md:items-center md:justify-between pb-12 mb-12 border-b gap-6 ${
-          isDarkMode ? "border-slate-900" : "border-slate-200"
-        }`}>
-          <div className="text-left">
-            <h4 className={`text-lg font-bold tracking-tight ${isDarkMode ? "text-slate-100" : "text-slate-900"}`}>Stay Updated</h4>
-            <p className={`text-xs mt-1 ${isDarkMode ? "text-gray-400" : "text-slate-500"}`}>Subscribe to see my latest projects & articles.</p>
-          </div>
-          
-          {/* Newsletter Form */}
-          <div className="w-full max-w-md">
-            {subscribed ? (
-              <span className={`text-xs font-semibold block animate-[fadeIn_0.3s_ease-out] ${
-                isDarkMode ? "text-cyan-400" : "text-blue-600"
-              }`}>
-                ✓ Thank you for subscribing!
-              </span>
-            ) : (
-              <form onSubmit={handleSubscribe} className="flex gap-3 w-full">
-                <input 
-                  type="email" 
-                  required
-                  placeholder="Enter your email" 
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className={`flex-grow rounded-xl px-4 py-2.5 text-xs outline-none transition duration-300 border ${
-                    isDarkMode 
-                      ? "bg-[#070420]/50 border-slate-800 text-slate-200 placeholder-gray-600 focus:border-cyan-500/60" 
-                      : "bg-white border-slate-200 text-slate-900 placeholder-slate-400 focus:border-blue-600"
-                  }`}
-                />
-                <button 
-                  type="submit"
-                  className={`text-xs font-bold px-6 py-2.5 rounded-xl transition duration-300 active:scale-95 cursor-pointer text-white ${
-                    isDarkMode 
-                      ? "bg-blue-600 hover:bg-blue-500 shadow-lg shadow-blue-600/10" 
-                      : "bg-slate-900 hover:bg-slate-800 shadow-md"
-                  }`}
-                >
-                  Subscribe
-                </button>
-              </form>
-            )}
-          </div>
-        </div>
+      <div className="max-w-6xl mx-auto">        
 
-        {/* Middle Segment: Asymmetric Information & Navigation Columns */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-6 text-left pb-12">
           
           {/* Column 1: Brand Info & Social Hooks */}
@@ -77,12 +22,13 @@ const Footer = () => {
               isDarkMode ? "text-slate-100" : "text-slate-900"
             }`}>
               <span className={`w-2 h-2 rounded-full animate-pulse ${isDarkMode ? "bg-blue-500" : "bg-blue-600"}`}></span>
-              Portfolio
+              <img src={isDarkMode ? "/images/logoNO.png" : "/images/logoNO-light.png"} 
+                  alt="Logo" className="w-16 h-16 inline-block mr-2" />
             </div>
             
             <div className={`text-xs leading-relaxed font-medium ${isDarkMode ? "text-gray-400" : "text-slate-600"}`}>
               <p>Full-Stack Developer building beautiful,</p>
-              <p>responsive web experiences with modern front-</p>
+              <p>responsive web experiences with modern front</p>  
               <p>end technologies.</p>
             </div>
 

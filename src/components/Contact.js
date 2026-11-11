@@ -81,7 +81,7 @@ const Contact = () => {
               
               <h3 className={`text-xl font-bold font-sans ${isDarkMode ? "text-slate-100" : "text-slate-900"}`}>Hadeel Elmutasim</h3>
               <p className={`text-xs sm:text-sm mt-4 leading-relaxed font-sans ${isDarkMode ? "text-slate-400" : "text-slate-600"}`}>
-                Front-end Developer based in UAE. I focus on web development and mobile application design, where I blend functionality with aesthetics to deliver meaningful and user-friendly experiences.
+                Full Stack Developer based in UAE. I focus on web development and mobile application design, where I blend functionality with aesthetics to deliver meaningful and user-friendly experiences.
               </p>
             </div>
 

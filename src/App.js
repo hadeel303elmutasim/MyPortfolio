@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import WhatsAppButton from './utils/WhatsAppButton';
 
 function MainPortfolioPage() {
   const { isDarkMode } = useTheme();
@@ -33,6 +34,7 @@ function MainPortfolioPage() {
         <Contact />
         <Footer />
       </main>
+      <WhatsAppButton /> 
     </div>
   );
 }
