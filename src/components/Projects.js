@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useTheme } from '../ThemeContext'; // import context for theme dark/light mode toggle
-import '../App.css'; // Import the CSS file for animations
+import { useTheme } from '../ThemeContext'; 
+import '../App.css'; 
 
 const Projects = () => {
   const { isDarkMode } = useTheme();
