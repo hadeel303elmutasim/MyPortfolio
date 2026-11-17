@@ -16,8 +16,8 @@ const Projects = () => {
       tags: ["HTML", "CSS", "UX Design"],
       category: "Web Apps",
       image: "/images/project_1.png",
-      liveLink: "https://hadeel303elmutasim.github.io/project1_front/",
-      githubLink: "https://github.com/hadeel303elmutasim/project1_front.git"
+      liveLink: "https://hadeel303elmutasim.github.io/Nova_Cinema/",
+      githubLink: "https://github.com/hadeel303elmutasim/Nova_Cinema.git"
     },
     { 
       id: 2, 
