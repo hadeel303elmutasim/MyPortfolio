@@ -2,10 +2,11 @@ import React from 'react';
 
 const WhatsAppButton = () => {
   const phone = "971542637446"; 
-  const message = "Hello Hadeel, I would like to connect with you regarding your portfolio.";
-  return (
+  const message = "Hello Hadeel, I would like to discuss a potential project with you.";
+  const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  return ( 
     <a
-      href={`https://wa.me/${phone}?text=${message}`}
+      href={whatsappUrl}
       target="_blank"
       rel="noreferrer"
       aria-label="Chat on WhatsApp"

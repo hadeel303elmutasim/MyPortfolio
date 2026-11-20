@@ -10,16 +10,6 @@ const Projects = () => {
   // Dataset featuring live deployment and GitHub source link properties
   const projectsData = [
     { 
-      id: 1, 
-      title: "NOVA Cinema", 
-      desc: "A responsive and fast, visually engaging landing page with optimized media , dynamic pricing and offers.", 
-      tags: ["HTML", "CSS", "UX Design"],
-      category: "Web Apps",
-      image: "/images/project_1.png",
-      liveLink: "https://hadeel303elmutasim.github.io/Nova_Cinema/",
-      githubLink: "https://github.com/hadeel303elmutasim/Nova_Cinema.git"
-    },
-    { 
       id: 2, 
       title: "Whisper Heart Bookstore", 
       desc: "A modern online bookstore landing page with a curated selection of titles, user reviews, and a seamless shopping experience.", 
@@ -71,6 +61,16 @@ const Projects = () => {
     },
     { 
       id: 7, 
+      title: " Nexis Tech Admin Dashboard", 
+      desc: "A comprehensive admin dashboard for managing e-commerce operations, including product listings, orders, and user management.", 
+      tags: ["HTML", "Tailwind CSS", "React","UX Design", "Node.js" , "MongoDB"],
+      category: "Web Apps",
+      image: "/images/project_8.png",
+      liveLink: "https://nexistech-dashboard.vercel.app/login",
+      githubLink: "https://github.com/mohamed-ayman123/ecommerce-project.git"
+    },
+    { 
+      id: 8, 
       title: "My Portfolio Website", 
       desc: "A modern, responsive portfolio website showcasing my projects and skills.", 
       tags: ["HTML", "Tailwind CSS", "React","UX Design"],

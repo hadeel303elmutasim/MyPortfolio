@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTheme } from '../ThemeContext'; //  import context for theme dark/light mode toggle
+import { socials } from '../utils/socials';
 
 const Footer = () => {
   const { isDarkMode } = useTheme();
@@ -34,26 +35,22 @@ const Footer = () => {
 
             {/* Circular Social Media Link Container Icons */}
             <div className="flex items-center gap-2.5 pt-2">
-              {[
-                { url: "https://www.linkedin.com/in/hadeel-elmutasim/", icon: "fa-linkedin-in" },
-                { url: "https://www.facebook.com/hadola.elmutasim", icon: "fa-facebook-f" },
-                { url: "https://www.instagram.com/hadeel_2m.303/", icon: "fa-instagram" },
-                { url: "https://github.com/hadeel303elmutasim", icon: "fa-github" }
-              ].map((social, index) => (
-                <a 
-                  key={index}
-                  href={social.url} 
-                  target="_blank" 
-                  rel="noreferrer" 
-                  className={`w-7 h-7 rounded-full border flex items-center justify-center transition-all duration-300 ${
-                    isDarkMode 
-                      ? "bg-slate-900 border-slate-800/80 text-gray-400 hover:text-cyan-400 hover:border-cyan-500/40" 
-                      : "bg-white border-slate-200 text-slate-500 hover:text-blue-600 hover:border-slate-300 shadow-sm"
-                  }`}
-                >
-                  <i className={`fa-brands ${social.icon} text-xs`}></i>
-                </a>
-              ))}
+             {socials.map((s) => (
+              <a
+                key={s.name}
+                href={s.url}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={s.name}
+                className={`w-7 h-7 rounded-full border flex items-center justify-center transition-all duration-300 ${
+                  isDarkMode
+                    ? "bg-slate-900 border-slate-800/80 text-gray-400 hover:text-cyan-400 hover:border-cyan-500/40"
+                    : "bg-white border-slate-200 text-slate-500 hover:text-blue-600 hover:border-slate-300 shadow-sm"
+                }`}
+              >
+                <i className={`${s.family} ${s.icon}`} aria-hidden="true"></i>
+              </a>
+            ))}
             </div>
           </div>
 

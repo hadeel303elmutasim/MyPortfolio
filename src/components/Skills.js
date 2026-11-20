@@ -9,12 +9,12 @@ const Skills = () => {
     [
       { name: "HTML5", percentage: 95, color: "#FF4500" },
       { name: "CSS3", percentage: 90, color: "#1E90FF" },
-      { name: "JavaScript", percentage: 85, color: "#FFD700" },
-      { name: "React.js", percentage: 85, color: "#00FFFF" }
+      { name: "JavaScript", percentage: 90, color: "#FFD700" },
+      { name: "React.js", percentage: 90, color: "#00FFFF" }
     ],
     [
-      { name: "Tailwind CSS", percentage: 88, color: "#06B6D4" },
-      { name: "Bootstrap", percentage: 50, color: "#7952B3" },
+      { name: "Tailwind CSS", percentage: 90, color: "#06B6D4" },
+      { name: "Bootstrap", percentage: 80, color: "#7952B3" },
       { name: "DART", percentage: 60, color: "#FF4500" },
       { name: "PYTHON ", percentage: 30, color: "#1E90FF" }
     ]

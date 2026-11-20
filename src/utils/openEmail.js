@@ -1,6 +1,12 @@
-const EMAIL = "hadeelelmutasim303@gmail.com"; 
-const SUBJECT = "Hadeel Prortfolio Contact";
-const BODY = "Hi Hadeel,";
+import { EMAIL } from '../utils/e-contact';
+
+const SUBJECT = "Hadeel Portfolio Contact";
+const BODY = "Hello! Please share your Name, your contact information , your project idea and select the service you need:\n"
++"• Business Website (Multi-page)\n"
++"• One-Page Website\n"
++"• Landing Page\n"
++"• E-Commerce Store\n"
++"• Web-Based System";
 
 export const openEmail = (e) => {
   e.preventDefault();

@@ -3,9 +3,21 @@ import React, { createContext, useState, useContext, useEffect } from 'react';
 const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
-  const [isDarkMode, setIsDarkMode] = useState(true); // Default dark as per current code
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    try {
+      const saved = localStorage.getItem('theme');
+      if (saved) return saved === 'dark';
+    } catch (e) {}
+    return true; 
+  });
 
-  // Sync with HTML class if you use tailwind's 'dark' class later, or just use context state
+  useEffect(() => {
+    try {
+      localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+    } catch (e) {}
+    document.documentElement.classList.toggle('dark', isDarkMode);
+  }, [isDarkMode]);
+
   return (
     <ThemeContext.Provider value={{ isDarkMode, setIsDarkMode }}>
       {children}

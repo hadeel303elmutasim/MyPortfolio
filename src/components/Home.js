@@ -126,7 +126,7 @@ const Home = () => {
                 ? "bg-slate-900 border-slate-800 text-gray-400" 
                 : "bg-slate-100 border-slate-200 text-slate-600"
             }`}>
-              ⚛ React Dev
+              <i class="fa-solid fa-terminal text-blue-600"></i>  React Dev
             </span>
           </div>
 
@@ -134,12 +134,13 @@ const Home = () => {
           <div className={isDarkMode ? "text-slate-300" : "text-slate-700"}>
             <p><span className={isDarkMode ? "text-pink-500" : "text-pink-600"}>const</span> <span className={isDarkMode ? "text-blue-400" : "text-blue-600"}>developer</span> = {'{'}</p>
             <p className="pl-4">name: <span className={isDarkMode ? "text-green-400" : "text-emerald-600"}>"Hadeel Elmutasim"</span>,</p>
-            <p className="pl-4">role: <span className={isDarkMode ? "text-green-400" : "text-emerald-600"}>"Front-Stack Dev"</span>,</p>
+            <p className="pl-4">role: <span className={isDarkMode ? "text-green-400" : "text-emerald-600"}>"Software Developer"</span>,</p>
             <p className="pl-4">stack: [</p>
-            <p className="pl-8"><span className={isDarkMode ? "text-green-400" : "text-emerald-600"}>"HTML"</span>, <span className={isDarkMode ? "text-green-400" : "text-emerald-600"}>"CSS"</span>,</p>
+            <p className="pl-8"><span className={isDarkMode ? "text-green-400" : "text-emerald-600"}>"HTML5"</span>, <span className={isDarkMode ? "text-green-400" : "text-emerald-600"}>"CSS3"</span>,</p>
             <p className="pl-8"><span className={isDarkMode ? "text-green-400" : "text-emerald-600"}>"JavaScript"</span>, <span className={isDarkMode ? "text-green-400" : "text-emerald-600"}>"React"</span>,</p>
-            <p className="pl-8"><span className={isDarkMode ? "text-green-400" : "text-emerald-600"}>"Tailwind"</span></p>
-            <p className="pl-4">]</p>
+            <p className="pl-8"><span className={isDarkMode ? "text-green-400" : "text-emerald-600"}>"Tailwind"</span>, <span className={isDarkMode ? "text-green-400" : "text-emerald-600"}>"Node.js/Express"</span></p>
+            <p className="pl-8"><span className={isDarkMode ? "text-green-400" : "text-emerald-600"}>"MongoDB"</span> </p>
+            <p className="pl-4">] <span className={isDarkMode ? "text-pink-500" : "text-pink-600"}>;</span></p>
             <p>{'}'}</p>
             <p className={`pt-4 ${isDarkMode ? "text-gray-500" : "text-slate-400"}`}>&gt; ready_to_build() <span className={isDarkMode ? "text-green-400" : "text-emerald-600"}>✓</span></p>
           </div>
@@ -150,7 +151,7 @@ const Home = () => {
               ? "bg-blue-500/10 border-blue-500/30 text-blue-400 shadow-blue-500/5" 
               : "bg-blue-50 border-blue-200 text-blue-600 shadow-slate-200"
           }`}>
-            UI / UX
+           <i class="fa-solid fa-location-dot text-red-700"></i> Abu Dhabi, UAE
           </span>
         </div>
 

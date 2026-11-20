@@ -14,7 +14,7 @@ function MainPortfolioPage() {
   const { isDarkMode } = useTheme();
 
   return (
-    <div className={`min-h-screen flex flex-col justify-between scroll-smooth relative overflow-hidden transition-colors duration-300 ${
+    <div className={`min-h-screen flex flex-col justify-between scroll-smooth relative overflow-x-clip transition-colors duration-300 ${
       isDarkMode 
         ? "bg-[#030014] text-white" 
         : "bg-slate-50 text-slate-900"
@@ -32,8 +32,8 @@ function MainPortfolioPage() {
         <Skills />
         <Projects />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
       <WhatsAppButton /> 
     </div>
   );
